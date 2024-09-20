@@ -91,7 +91,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border-color: #039855;
+  border-color: #027A48;
 }
 .btn-secondary:hover, .btn-primary:hover {
   transform: scale(0.98);
