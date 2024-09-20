@@ -1,8 +1,10 @@
 %btn {
-    display: inline-block;
-    border-radius: 5px;
-    padding: 8px 20px;
-    margin: 3px;
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-color: #027A48;
 
     &:hover {
         transform: scale(.98);
