@@ -79,10 +79,12 @@
 }
 
 .container {
-  max-width: 1100px;
-  padding: 0 30px;
-  margin: 0 auto;
-  overflow: hidden;
+  display: flex;
+  padding: 96px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  align-self: stretch;
 }
 
 .btn-secondary, .btn-primary {
@@ -146,8 +148,50 @@ body {
   gap: 32px;
   text-decoration: none;
 }
-#main-header .navbar .links .links > li {
+#main-header .navbar .links .links a {
   text-decoration: none;
+}
+
+#hero-section {
+  display: flex;
+  padding: 96px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  align-self: stretch;
+}
+#hero-section .hero-container {
+  display: flex;
+  width: 1280px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+#hero-section .hero-text-wrapper {
+  display: flex;
+  width: 1024px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+#hero-section .badge-group {
+  display: flex;
+  padding: 4px 10px 4px 4px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 16px;
+  background: #ECFDF3;
+  mix-blend-mode: multiply;
+}
+#hero-section .badge-group .badge {
+  display: flex;
+  align-items: flex-start;
+}
+#hero-section .badge-group .badge .badge-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
 @media (max-width: 700px) {
