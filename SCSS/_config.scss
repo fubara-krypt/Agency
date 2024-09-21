@@ -1,15 +1,17 @@
 $light-color: #f4f4f4;
 $font-stack: Mclaren;
- $primary-color:#027A48;
+$primary-color: #027A48;
 $secondary-color: #ff8700;
 
 // Set text color based on bg //
 
 @function set-text-color($color) {
-    @if(lightness($color) > 50){
+    @if(lightness($color) > 50) {
         @return #333;
 
-    } @else {
+    }
+
+    @else {
         @return #fff;
     }
 }
@@ -23,7 +25,13 @@ $secondary-color: #ff8700;
 
 // Margin & Padding Classes 
 
-$spaceamounts: (1,2,3,4,5);
+$spaceamounts: (
+    1,
+    2,
+    3,
+    4,
+    5
+);
 
 @each $space in $spaceamounts {
     .m-#{$space} {
