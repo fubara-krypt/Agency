@@ -93,23 +93,29 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+  font-family: McLaren;
   border-radius: 8px;
-  border: 1px solid var(--Gray-300, #D0D5DD);
-  background: var(--Base-White, #FFF);
-  /* Shadow/xs */
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 .btn-secondary:hover, .btn-primary:hover {
   transform: scale(0.98);
 }
 
 .btn-primary {
+  border: 1px solid var(--Gray-300, #D0D5DD);
+  background: var(--Base-White, #FFF);
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   background-color: rgb(2.8225806452, 172.1774193548, 101.6129032258);
   color: #fff;
 }
 
 .btn-secondary {
-  background-color: #ff9f33;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #D0D5DD);
+  background: var(--Base-White, #FFF);
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  background-color: white;
   color: #333;
 }
 
@@ -132,12 +138,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
 }
 #main-header .navbar {
   display: flex;
   width: 1280px;
-  padding: 0px 32px;
   justify-content: space-between;
   align-items: center;
 }
@@ -148,28 +152,33 @@ body {
 }
 #main-header .navbar .links {
   display: flex;
-  align-items: center;
   gap: 32px;
-  text-decoration: none;
+  list-style: none;
+  align-items: center;
 }
-#main-header .navbar .links .links a {
+#main-header .navbar .links a {
+  color: #667085;
   text-decoration: none;
 }
 
 #hero-section {
   display: flex;
-  padding: 96px 0px;
+  padding: 96px 80px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+#hero-section .hero-container {
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
   align-self: stretch;
 }
-#hero-section .hero-container {
+#hero-section .hero-container .hero-section-btn {
   display: flex;
-  width: 1280px;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
+  flex-direction: row;
+  gap: 12px;
 }
 #hero-section .hero-text-wrapper {
   display: flex;
@@ -184,10 +193,8 @@ body {
   text-align: center;
   font-family: McLaren;
   font-size: 60px;
-  font-style: normal;
   font-weight: 400;
   line-height: 72px;
-  /* 120% */
   letter-spacing: -1.2px;
 }
 #hero-section .hero-text-wrapper p {
@@ -196,19 +203,11 @@ body {
   text-align: center;
   font-family: McLaren;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 30px;
-  /* 150% */
-}
-#hero-section .hero-text-wrapper .hero-section-btn {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
 }
 #hero-section .badge-group {
   display: flex;
-  padding: 4px 10px 4px 4px;
+  padding: 4px 10px;
   align-items: center;
   gap: 12px;
   border-radius: 16px;
@@ -217,13 +216,60 @@ body {
 }
 #hero-section .badge-group .badge {
   display: flex;
-  align-items: flex-start;
+  padding: 2px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: #FFF;
 }
-#hero-section .badge-group .badge .badge-content {
+#hero-section .badge-group .badge p {
+  color: #12B76A;
+  font-family: McLaren;
+  font-size: 14px;
+  line-height: 20px;
+}
+#hero-section .badge-group .badge-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 4px;
+}
+#hero-section .badge-group .badge-content p {
+  color: #12B76A;
+  font-family: McLaren;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#social-proof-section {
+  display: flex;
+  padding-bottom: 96px;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+}
+#social-proof-section .social-container {
+  display: flex;
+  width: 1280px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+#social-proof-section .social-container p {
+  width: 100%;
+  color: #667085;
+  text-align: center;
+  font-family: McLaren;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+#social-proof-section .social-container .company-logo-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
 }
 
 @media (max-width: 700px) {
