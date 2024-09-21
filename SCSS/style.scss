@@ -1,86 +1,107 @@
+// Importing necessary configuration, utility, and button styles
 @import "_config";
 @import "_utilities";
 @import "_buttons";
 
-
+// Global reset to ensure consistent box-sizing, margin, and padding
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+// Basic body styling
 body {
-    background: white;
-    font-family: Satoshi;
-    line-height: 1.6;
+    background: white; // Sets the background color to white
+    font-family: Satoshi; // Applies the Satoshi font
+    line-height: 1.6; // Sets the line height for better readability
 }
 
+// Header section styling
 #main-header {
-    display: flex;
-    width: 1440px;
-    height: 80px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+    display: flex; // Flexbox for layout
+    width: 1440px; // Fixed width for the header
+    height: 80px; // Fixed height for the header
+    flex-direction: column; // Arranges elements in a column
+    justify-content: center; // Centers content vertically
+    align-items: center; // Centers content horizontally
+    flex-shrink: 0; // Prevents the header from shrinking
 
+    // Navbar styling
     .navbar {
-        display: flex;
-        width: 1280px;
-        padding: 0px 32px;
-        justify-content: space-between;
-        align-items: center;
+        display: flex; // Flexbox layout for navbar items
+        width: 1280px; // Fixed width for navbar
+        padding: 0px 32px; // Padding inside the navbar for spacing
+        justify-content: space-between; // Distributes items with space between
+        align-items: center; // Vertically aligns items in the center
 
+        // Logo styling
         .logo {
-            width: 40px;
-            height: 40px;
-            flex-shrink: 0;
+            width: 40px; // Fixed width for the logo
+            height: 40px; // Fixed height for the logo
+            flex-shrink: 0; // Prevents logo from shrinking
         }
 
+        // Links styling
         .links {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-            text-decoration: none;
+            display: flex; // Flexbox layout for links
+            align-items: center; // Centers the links vertically
+            gap: 32px; // Adds space between each link
+            text-decoration: none; // Removes default text decoration from the links
 
-            .links>li {
-                text-decoration: none;
+            // Link-specific styling
+            .links a {
+                text-decoration: none; // Ensures no underline for the links
             }
         }
     }
 }
 
+// Hero section styling
 #hero-section {
-    display: flex;
-    padding: 96px 0px;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
-    align-self: stretch;
+    display: flex; // Flexbox layout for hero section
+    padding: 96px 0px; // Padding for spacing above and below
+    flex-direction: column; // Arranges elements in a column
+    align-items: center; // Centers content horizontally
+    gap: 64px; // Adds space between child elements
+    align-self: stretch; // Stretches the section to fit the container
 
+    // Hero container styling
     .hero-container {
-        display: flex;
-        width: 1280px;
-        padding: 0px 32px;
-        flex-direction: column;
-        align-items: center;
-        gap: 32px;
+        display: flex; // Flexbox layout for container
+        width: 1280px; // Fixed width for the container
+        padding: 0px 32px; // Padding for internal spacing
+        flex-direction: column; // Arranges elements in a column
+        align-items: center; // Centers the elements horizontally
+        gap: 32px; // Adds space between elements
+    }
 
-        .hero-text-wrapper {
-            display: flex;
-            width: 1024px;
-            flex-direction: column;
-            align-items: center;
-            gap: 24px;
+    // Text wrapper within the hero section
+    .hero-text-wrapper {
+        display: flex; // Flexbox layout for text wrapper
+        width: 1024px; // Fixed width for text wrapper
+        flex-direction: column; // Arranges text elements in a column
+        align-items: center; // Centers text elements horizontally
+        gap: 24px; // Adds space between text elements
+    }
 
-            .badge-group {
-                display: flex;
-                padding: 4px 10px 4px 4px;
-                align-items: center;
-                gap: 12px;
-            }
+    // Badge group styling
+    .badge-group {
+        display: flex; // Flexbox layout for badge group
+        padding: 4px 10px 4px 4px; // Padding for internal spacing
+        align-items: center; // Centers items in the badge group
+        gap: 12px; // Adds space between badges
+        border-radius: 16px; // Rounds the edges of the badge group
+        background: var(--Success-50, #ECFDF3); // Success-themed background
+        mix-blend-mode: multiply; // Blends the background for styling effects
+
+        // Badge-specific styling
+        .badge {
+            display: flex; // Flexbox layout for individual badge
+            align-items: flex-start; // Aligns badge content to the start
         }
     }
 }
 
-@import "_mobile"
+// Importing mobile-specific styles for responsiveness
+@import "_mobile";
