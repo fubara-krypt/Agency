@@ -89,11 +89,15 @@
 
 .btn-secondary, .btn-primary {
   display: flex;
-  padding: 10px 18px;
+  padding: 16px 28px;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  border-color: #027A48;
+  gap: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #D0D5DD);
+  background: var(--Base-White, #FFF);
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 .btn-secondary:hover, .btn-primary:hover {
   transform: scale(0.98);
@@ -173,6 +177,34 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+}
+#hero-section .hero-text-wrapper h1 {
+  max-width: 1024px;
+  color: #101828;
+  text-align: center;
+  font-family: McLaren;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  /* 120% */
+  letter-spacing: -1.2px;
+}
+#hero-section .hero-text-wrapper p {
+  max-width: 480px;
+  color: #667085;
+  text-align: center;
+  font-family: McLaren;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 150% */
+}
+#hero-section .hero-text-wrapper .hero-section-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
 #hero-section .badge-group {
   display: flex;

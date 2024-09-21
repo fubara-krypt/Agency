@@ -82,6 +82,37 @@ body {
         flex-direction: column; // Arranges text elements in a column
         align-items: center; // Centers text elements horizontally
         gap: 24px; // Adds space between text elements
+
+        h1 {
+            max-width: 1024px;
+            color: #101828;
+            text-align: center;
+            font-family: McLaren;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 72px;
+            /* 120% */
+            letter-spacing: -1.2px;
+        }
+
+        p {
+            max-width: 480px;
+            color: #667085;
+            text-align: center;
+            font-family: McLaren;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            /* 150% */
+        }
+
+        .hero-section-btn {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+        }
     }
 
     // Badge group styling
