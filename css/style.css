@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "McLaren";
+  src: url("/font/McLaren-Regular.ttf") format("truetype"), url("/font/McLaren-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 .m-1 {
   margin: 1rem;
 }
@@ -105,7 +111,7 @@
   background: var(--Base-White, #FFF);
   /* Shadow/xs */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-  background-color: rgb(2.8225806452, 172.1774193548, 101.6129032258);
+  background-color: #03ac66;
   color: #fff;
 }
 
@@ -325,6 +331,58 @@ body {
   letter-spacing: -0.72px;
 }
 
+#quote-section {
+  display: flex;
+  padding: 96px 80px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  align-self: stretch;
+}
+#quote-section .quote-image-holder {
+  height: 496px;
+  flex: 1 0 0;
+}
+#quote-section .attributes-arrow {
+  display: flex;
+  flex-direction: row;
+  align-items: space;
+  gap: 12px;
+  align-self: stretch;
+}
+#quote-section .quote-text-wrapper {
+  display: flex;
+  max-width: 608px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  flex: 1 0 0;
+}
+#quote-section .quote-text-wrapper .star-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+#quote-section .quote-text-wrapper h2 {
+  color: var(--Gray-900, #101828);
+  font-family: McLaren;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  /* 125% */
+  letter-spacing: -0.96px;
+}
+#quote-section .quote-text-wrapper .avatar-text {
+  display: flex;
+  max-width: 452px;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+
 @media (max-width: 700px) {
   .showcase {
     height: 400px;
@@ -335,6 +393,4 @@ body {
   .showcase-content img {
     display: none;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

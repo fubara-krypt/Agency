@@ -259,15 +259,29 @@ body {
 
 #quote-section {
     display: flex;
-    padding: 96px 0px;
-    flex-direction: column;
+    padding: 96px 80px;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 64px;
     align-self: stretch;
 
+    .quote-image-holder {
+        height: 496px;
+        flex: 1 0 0;
+    }
+
+    .attributes-arrow {
+        display: flex;
+        flex-direction: row;
+        align-items: space;
+        gap: 12px;
+        align-self: stretch;
+    }
+
     .quote-text-wrapper {
         display: flex;
+        max-width: 608px;
         flex-direction: column;
         align-items: flex-start;
         gap: 48px;
@@ -279,7 +293,29 @@ body {
             align-items: center;
             gap: 4px;
         }
+
+        h2 {
+            color: var(--Gray-900, #101828);
+            font-family: McLaren;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 60px;
+            /* 125% */
+            letter-spacing: -0.96px;
+        }
+
+
+        .avatar-text {
+            display: flex;
+            max-width: 452px;
+            align-items: flex-start;
+            gap: 16px;
+            flex: 1 0 0;
+        }
     }
+
+
 }
 
 // Import mobile-specific styles for responsiveness
